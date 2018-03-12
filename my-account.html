@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Strayos MyAccount</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bundle.css">
+	<script src="js/modernizr-custom.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<a class="btnAccountClose" href="#">&nbsp;</a>
+	<div class="dvMyAccount  clearfix">
+		<div class="myAccountLeft">
+			<div class="accountDetails clearfix">
+				<div class="accountOuter">
+					<a class="uploadIcon" href="#"><img src="images/cameraIcon.png" alt=""></a>
+					<div class="accountIcon">
+						<img src="images/profileIcon.jpg" alt="">
+					</div>
+				</div>
+				<div class="accountInfo clearfix">
+					<h4>Roan Bratcher</h4>
+					<p><a href="mailto:roan.bratcher@gmail.com">roan.bratcher@gmail.com</a></p>
+					<p>+1 (314) - 696 - 2777</p>
+					<h5><img src="images/addressIcon.png" alt=""> United States</h5>
+					<div class="accountBtnCont">
+						<a class="btnChangePassword" href="javascript:void(0);" data-toggle="modal" data-target="#modalChangePassword">Change Password</a>
+						<a class="btnChangePassword" href="javascript:void(0);" id="btnAccountEdit">Edit</a>
+					</div>
+				</div>
+				<!--Edit Account-->
+				<div class="dvEditAccount clearfix">
+					<div class="editAccountRow clearfix">
+						<div class="dvEditCol fLeft">
+							<label class="lblEdit">First Name</label>
+							<input type="text" name="" value="Roan" class="inputEdit" id="">
+						</div>
+						<div class="dvEditCol fRight">
+							<label class="lblEdit">Last Name</label>
+							<input type="text" name="" value="Bratcher" class="inputEdit" id="">
+						</div>
+					</div>
+					<div class="editAccountRow clearfix">
+						<label class="lblEdit">Email</label>
+						<input type="text" name="" value="roan.bratcher@gmail.com" class="inputEdit" id="">
+					</div>
+					<div class="editAccountRow clearfix">
+						<label class="lblEdit">Phone</label>
+						<input type="text" name="" value="+1 (314) - 696 - 2777" class="inputEdit" id="">
+					</div>
+					<div class="editAccountRow clearfix">
+						<label class="lblEdit">Country</label>
+						<select class="selectBtn editSelect">
+							<option>United States</option>
+						</select>
+					</div>
+					<div class="editAccountRow clearfix alignCenter">
+						<a href="#" class="btnSaveInfo">Save</a>
+					</div>
+				</div>
+				<!--Edit Account End-->
+			</div>
+		</div>
+		<div class="myAccountRight">
+			<div class="companyInfo clearfix">
+				<div class="editRow clearfix">
+					<h3>Company information</h3>
+					<a id="btnEdit" class="backBttn fRight" href="javascript:void(0);">Edit</a>
+				</div>
+				<div class="dvCompanyInfo clearfix">
+					<div class="infoRow clearfix">
+						<div class="info">
+							<h4>Company Name</h4>
+							<h5>Test Company Pvt. Ltd.</h5>
+						</div>
+						<div class="info">
+							<h4>Website</h4>
+							<h5><a href="https://www.testcompany.com">www.testcompany.com</a></h5>
+						</div>
+					</div>
+					<div class="infoRow clearfix">
+						<h4>Industry</h4>
+						<h5>Real Estate</h5>
+					</div>
+					<div class="infoRow clearfix">
+						<h4>Address</h4>
+						<h5>3470 Hampton Avenue, Suite 201,<br> St. Louis, MO 63139, Phone : +1 (314) - 696 - 2777</h5>
+					</div>
+				</div>
+				<!--Edit Company-->
+				<div class="dvEditCompanyInfo clearfix">
+					<div class="editCompanyRow clearfix">
+						<div class="editCompanyCol fLeft">
+							<label class="lblCompany">Company Name</label>
+							<input type="text" name="" value="Test Company pvt ltd" class="inputCompany" id="">
+						</div>
+						<div class="editCompanyCol mMargin fRight">
+							<label class="lblCompany">Website</label>
+							<input type="text" name="" value="www.testcompany.com" class="inputCompany" id="">
+						</div>
+					</div>
+					<div class="editCompanyRow clearfix">
+						<div class="editCompanyCol fLeft">
+							<label class="lblCompany">Industry</label>
+							<select class="selectBtn">
+								<option>Real Estate</option>
+							</select>
+						</div>
+					</div>
+					<div class="editCompanyRow clearfix">
+						<label class="lblCompany">Address</label>
+						<textarea class="txtAreaCompany" name="" id="" cols="30" rows="10">3470 Hampton Avenue, Suite 201, St. Louis, MO 63139, Phone : +1 (314) - 696 - 2777</textarea>
+					</div>
+				</div>
+				<!--Edit Company End-->
+			</div>
+			<div class="paymentInfo clearfix">
+				<h3>Payment information</h3>
+				<div class="infoRow clearfix">
+					<h4>Payment Method</h4>
+					<a class="btnAddCard" href="#">Add Credit/Debit Card</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Change Password Modal -->
+	<div id="modalChangePassword" class="modal fade dvChangePassword" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a class="btnClosePassword" href="javascript:void(0);" data-dismiss="modal"><img src="images/btnCloseProject.png" alt=""></a>
+					<h3>Change Passoword</h3>
+				</div>
+				<div class="modal-body">
+					<div class="frmRow clearfix">
+						<label class="lbl2">Old Password</label>
+						<input type="text" name="" id="" class="inputCompany">
+					</div>
+					<div class="frmRow clearfix">
+						<label class="lbl2">New Password</label>
+						<input type="text" name="" id="" class="inputCompany">
+					</div>
+					<div class="frmRow clearfix">
+						<label class="lbl2">Confirm Password</label>
+						<input type="text" name="" id="" class="inputCompany">
+					</div>
+					<div class="frmRow clearfix">
+						<a class="backBttn fLeft" href="javascript:void(0);" data-dismiss="modal">Cancel</a>
+						<a class="btnNext fRight" href="#">Save</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/jquery.strayos.js"></script>
+	<script>
+
+		function accountEdit(){
+			$("#btnAccountEdit").on("click", function(){
+				$(".uploadIcon").fadeIn(300);
+				$(".accountInfo").slideUp(300);
+				$(".dvEditAccount").slideDown(300);
+			});
+		}
+
+		function companyInfo(){
+			$("#btnEdit").on("click", function(){
+				$(this).text("Save");
+				$(".dvCompanyInfo").slideUp(300);
+				$(".dvEditCompanyInfo").slideDown(300);
+			});
+		}
+
+		$(function(){
+			accountEdit();
+			companyInfo();
+		});
+	</script>
+</body>
+</html>

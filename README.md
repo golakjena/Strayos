@@ -1,1 +1,7 @@
 # Strayos
+```
+npm install
+
+grunt
+
+```
